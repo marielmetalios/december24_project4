@@ -9,7 +9,7 @@
 
 // ! Use the following function whenever you need to redirect to a different page
 
-let redirectURL = '';
+let redirectURL = 'http://127.0.0.1:5500/blog.html';
 
 const redirectPage = function (url) {
   redirectURL = url;
