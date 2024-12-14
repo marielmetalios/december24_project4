@@ -5,6 +5,7 @@
 /*
   Tags
 */
+
 aside {
     background: linear-gradient(
       var(--light-accent), 
@@ -32,16 +33,18 @@ aside {
     display: flex;
     flex-flow: column wrap;
     position: relative;
+    font-size: 40px;
   }
   
   form > *:not(label) {
     margin: 1rem 0;
     padding: 0.5rem;
+    font-size: 40px;
   }
   
   h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
   }
   
@@ -49,7 +52,7 @@ aside {
     padding: 1rem;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 20rem;
     background-color: var(--dark);
     color: var(--light);
   }
