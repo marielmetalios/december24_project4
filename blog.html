@@ -10,34 +10,38 @@
   <link rel="stylesheet" href="./CSS/styles.css" />
   <link rel="stylesheet" href="./CSS/blog.css" />
 
-  <script defer src="./assets/js/logic.js" type="text/javascript"></script>
-  <script defer src="./assets/js/blog.js" type="text/javascript"></script>
+  <script defer src="./Javascript/logic.js" type="text/javascript"></script>
+  <script defer src="./Javascript/blog.js" type="text/javascript"></script>
 </head>
 
-<body>
  <!-- TODO: Create header, main, and footer elements -->
 
- <!-- for back button! -->
-  <input id ="back" type="button" value="Back" onclick="location.href='myindex.htm'" />
- 
- 
- <header>
-    <label id = "toggle">
+ <body>
+  <header>
+    <!-- this back button functionality is working, but it should be in JS instead! -->
+    <input id ="back" type="button" value="Back" onclick="location.href='index.html'" />
+    <!-- added aria-label for accessibility -->
+    <label id = "toggle" aria-label="Dark Mode Toggle">
       <input type = "checkbox">
       <span class="slider round"></span>
     </label>
-    <main>
-      <h1> Mariel's First Blog </h1>
-    </main>
   </header>
-</body>
-    <footer>
-      <h3> Made with Love! </h3>
+
+  <div>
+    <h1>My First Blog</h1>
+  </div>
+  
+  <main id = "blogPosts">
+    <!-- blog content should populate from appendedChildren in JS?? -->
+  </main>    
+ 
+  <footer>
+    <h3> Made with Love! </h3>
       <ul> 
         <li> Portfolio: Mariel Mock Up </li>
         <li> Blog: Full Stack Blog </li>
         <li> Email: mar@email.com </li>
       </ul>
-    </footer>
-
+  </footer>
+</body>
 </html>

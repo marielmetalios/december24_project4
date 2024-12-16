@@ -1,4 +1,17 @@
 // TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
+ const toggleFunctionality = document.getElementById("toggle");
+
+ toggleFunctionality.addEventListener('change', function (toggle) {
+     if (toggleFunctionality.checked) {
+         const sliderBefore = document.querySelector('.slider:before');
+         sliderBefore.style.transform = 'translateX(26px)';
+     } else {
+         const sliderBefore = document.querySelector('.slider:before');
+         sliderBefore.style.transform = 'none';
+     }
+
+ });
+
 
 
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
