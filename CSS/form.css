@@ -10,7 +10,9 @@
 
 /* The switch - the box around the slider */
 #toggle {
-  position: relative;
+  position: fixed;
+  top: 20px;
+  right: 20px;
   display: inline-block;
   width: 60px;
   height: 34px;
@@ -76,13 +78,13 @@ input:checked + .slider:before {
 
 
 h1 {
-  font-size: 100px;
-  padding: 2%
+  font-size: 20x;
+  display: inline-block;
 }
 
 .page {
 display: flex;
-gap: 3rem;
+gap: 2rem;
 /* align-items: center */
 }
 
@@ -94,7 +96,7 @@ gap: 3rem;
 }
 
 img {
-  max-width: 90%;
+  max-width: 50%;
   border-radius: 50%;
   padding: 5%;
 }
@@ -110,7 +112,6 @@ section {
   width: 80%;
   padding: 5%
 }
-
 
 
 /* END MAR ADJUSTMENTS------------- */
@@ -133,7 +134,7 @@ aside {
   }
   
   aside > h2 {
-    font-size: 4rem;
+    font-size: 2rem;
     color: white;
     text-shadow: 1px 1px 1px var(--dark-accent);
   }
@@ -142,18 +143,18 @@ aside {
     display: flex;
     flex-flow: column wrap;
     position: relative;
-    font-size: 40px;
+    font-size: 1.5rem;
   }
   
   form > *:not(label) {
     margin: 1rem 0;
     padding: 0.5rem;
-    font-size: 40px;
+    font-size: 1rem;
   }
   
   h2 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
   
@@ -161,7 +162,7 @@ aside {
     padding: rem;
     cursor: pointer;
     font-weight: bold;
-    font-size: 20rem;
+    font-size: 1rem;
     background-color: var(--dark);
     color: var(--light);
   }
@@ -217,11 +218,11 @@ aside {
 
   @media only screen and (max-width: 768px)  {
     h1 {
-      font-size: 25px;
+      font-size: 10px;
     }
 
     h2 {
-      font-size: 25px;
+      font-size: 10px;
       justify-content: center;
     }
 
@@ -234,15 +235,15 @@ aside {
     }
 
     form {
-      font-size: 25px;
+      font-size: 10px;
     }
 
     form > *:not(label) {
-      font-size: 20px;
+      font-size: 10px;
     }
 
     #error {
-      font-size: 30px;
+      font-size: 10px;
     }
 
     .container {

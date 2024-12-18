@@ -6,6 +6,8 @@ const titleSubmitted = document.getElementById('title');
 const contentSubmitted = document.getElementById('content');
 const submitButton = document.getElementById('button');
 const errorMessage = document.getElementById('error');
+let blogsPosted = JSON.parse(localStorage.getItem('blogPosts')) || [];
+
 
 // we want to clear out form submisstions eventually:
     function clearOutForm() {
@@ -32,10 +34,10 @@ submitButton.addEventListener('click', function (event) {
             return; }
 
     if (!titleSubmitted.value.trim())
-            { errorMessage.textContent = "Please complete the form!";
-                return; }
+        { errorMessage.textContent = "Please complete the form!";
+            return; }
 
-    if (!titleSubmitted.value.trim())
+    if (!contentSubmitted.value.trim())
         { errorMessage.textContent = "Please complete the form!";    
             return; }
     
@@ -47,11 +49,12 @@ submitButton.addEventListener('click', function (event) {
         userName: userNameSubmitted.value.trim(),
         title: titleSubmitted.value.trim(),
         content: contentSubmitted.value.trim(),
-
     };
 
+    // blogsPosted.push(blogPosts);
+
     // save to local storage and store as string:
-    localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
+    localStorage.setItem('blogPosts', JSON.stringify(blogsPosted));
     console.log ('Blog posts are logged and stored in local', blogPosts);
 
     // now use this.method to redirect to the URL defined above 
@@ -68,5 +71,4 @@ submitButton.addEventListener('click', function (event) {
     };
 
     formSubmission();
-
  
